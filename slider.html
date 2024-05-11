@@ -1,0 +1,151 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  .swiper{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: red;
+    height: calc((100% - 30px) / 2) !important;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px black;
+  }
+  .card{
+   
+  }
+  
+  #card_img
+  {
+    position: relative;
+    left:-220px;
+    top: 70px;
+  }
+  .card-info,.card-footer
+  {
+    position: relative;
+    top:-150px;
+    left: 100px;
+  }
+  .mySwiper
+  {
+    height:500px;
+    width:100%;
+  }
+  @media (max-width:600px)
+  {
+    #card_img
+  {
+    position: relative;
+    left:0px;
+    top: 0px;
+  }
+  .card-info,.card-footer
+  {
+    position: relative;
+    top:0px;
+    left:0px;
+  }
+}
+  @media (max-width: 600px)
+  {
+#card_img {
+    height: 200px;
+  
+    width: 370px;
+}
+  .mySwiper
+  {
+    height:700px;
+    width:100%;
+  }
+  }
+</style>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card">
+        <div class="card-img"><img id="card_img" src="https://img.freepik.com/premium-photo/golden-bangles-stone_33548-2.jpg?w=996" height="200" width="200"/></div>
+        <div class="card-info">
+          <p class="text-title">MASD DJND DJBF</p>
+          <p class="text-body">Rs-1200 RS-2000</p>
+          <button>Order</button>
+        </div>
+        </div></div>
+        <div class="swiper-slide">
+          <div class="card">
+          <div class="card-img"><img id="card_img" src="https://img.freepik.com/premium-photo/golden-bangles-stone_33548-2.jpg?w=996" height="200" width="200"/></div>
+          <div class="card-info">
+            <p class="text-title">MASD DJND DJBF</p>
+            <p class="text-body">Rs-1200 RS-2000</p>
+            <button>Order</button>
+          </div>
+          </div></div><div class="swiper-slide">
+            <div class="card">
+            <div class="card-img"><img id="card_img" src="https://img.freepik.com/premium-photo/golden-bangles-stone_33548-2.jpg?w=996" height="200" width="200"/></div>
+            <div class="card-info">
+              <p class="text-title">MASD DJND DJBF</p>
+              <p class="text-body">Rs-1200 RS-2000</p>
+              <button>Order</button>
+            </div>
+            </div></div><div class="swiper-slide">
+              <div class="card">
+              <div class="card-img"><img id="card_img" src="https://img.freepik.com/premium-photo/golden-bangles-stone_33548-2.jpg?w=996" height="200" width="200"/></div>
+              <div class="card-info">
+                <p class="text-title">MASD DJND DJBF</p>
+                <p class="text-body">Rs-1200 RS-2000</p>
+                <button>Order</button>
+              </div>
+              </div></div><div class="swiper-slide">
+                <div class="card">
+                <div class="card-img"><img id="card_img" src="https://img.freepik.com/premium-photo/golden-bangles-stone_33548-2.jpg?w=996" height="200" width="200"/></div>
+                <div class="card-info">
+                  <p class="text-title">MASD DJND DJBF</p>
+                  <p class="text-body">Rs-1200 RS-2000</p>
+                  <button>Order</button>
+                </div>
+                </div></div>
+                <div class="swiper-slide">
+                  <div class="card">
+                  <div class="card-img"><img id="card_img" src="https://img.freepik.com/premium-photo/golden-bangles-stone_33548-2.jpg?w=996" height="200" width="200"/></div>
+                  <div class="card-info">
+                    <p class="text-title">MASD DJND DJBF</p>
+                    <p class="text-body">Rs-1200 RS-2000</p>
+                    <button>Order</button>
+                  </div>
+                  </div></div>
+  </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
+      grid: {
+        rows: 2,
+      },
+      spaceBetween: 20,
+      
+    });
+  </script>
